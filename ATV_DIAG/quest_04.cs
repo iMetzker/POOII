@@ -36,7 +36,7 @@ class Program
                     }
                     else
                     {
-                        Console.WriteLine("Limite de alunos atingido.");
+                        Console.WriteLine("Número máximo de alunos atingido, limite atual de 5.");
                     }
 
                     break;

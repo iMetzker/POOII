@@ -23,8 +23,8 @@ Códigos em execução.
 
 ### ✨Questão 03
 
-<img src="./ATV_DIAG/assets/img/quest_02.png" alt="preview">
+<img src="./ATV_DIAG/assets/img/quest_03.png" alt="preview">
 
 ### ✨Questão 04
 
-<img src="./ATV_DIAG/assets/img/quest_02.png" alt="preview">
+<img src="./ATV_DIAG/assets/img/quest_04.png" alt="preview">
