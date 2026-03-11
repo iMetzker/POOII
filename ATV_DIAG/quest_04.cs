@@ -4,13 +4,13 @@ class Program
 {
     static void Main()
     {
-        string[] alunos = new string[5];
-        double[] notas = new double[5];
+        string[] students = new string[5];
+        double[] grades = new double[5];
 
-        int opcao = 0;
-        int contador = 0;
+        int option = 0;
+        int count = 0;
 
-        while (opcao != 4)
+        while (option != 4)
         {
             Console.WriteLine("\n1 - Cadastrar aluno");
             Console.WriteLine("2 - Listar alunos");
@@ -18,21 +18,21 @@ class Program
             Console.WriteLine("4 - Sair");
             Console.Write("Escolha uma opção: ");
 
-            opcao = int.Parse(Console.ReadLine());
+            option = int.Parse(Console.ReadLine());
 
-            switch (opcao)
+            switch (option)
             {
                 case 1:
 
-                    if (contador < 5)
+                    if (count < 5)
                     {
                         Console.Write("Nome do aluno: ");
-                        alunos[contador] = Console.ReadLine();
+                        students[count] = Console.ReadLine();
 
                         Console.Write("Nota: ");
-                        notas[contador] = double.Parse(Console.ReadLine());
+                        grades[count] = double.Parse(Console.ReadLine());
 
-                        contador++;
+                        count++;
                     }
                     else
                     {
@@ -43,24 +43,24 @@ class Program
 
                 case 2:
 
-                    for (int i = 0; i < contador; i++)
+                    for (int i = 0; i < count; i++)
                     {
-                        Console.WriteLine(alunos[i] + " - Nota: " + notas[i]);
+                        Console.WriteLine(students[i] + " - Nota: " + grades[i]);
                     }
 
                     break;
 
                 case 3:
 
-                    double soma = 0;
+                    double sum = 0;
 
-                    for (int i = 0; i < contador; i++)
+                    for (int i = 0; i < count; i++)
                     {
-                        soma += notas[i];
+                        sum += grades[i];
                     }
 
-                    if (contador > 0)
-                        Console.WriteLine("Média: " + (soma / contador));
+                    if (count > 0)
+                        Console.WriteLine("Média: " + (sum / count));
                     else
                         Console.WriteLine("Nenhum aluno cadastrado.");
 

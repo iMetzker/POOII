@@ -4,9 +4,9 @@ class Program
 {
     static void Main()
     {
-        string continuar = "S";
+        string continueOption = "S";
 
-        while (continuar.ToUpper() == "S")
+        while (continueOption.ToUpper() == "S")
         {
             Console.WriteLine("===== MENU =====");
             Console.WriteLine("1 - Somar dois números");
@@ -15,7 +15,7 @@ class Program
             Console.WriteLine("4 - Dividir dois números");
             Console.Write("Escolha uma opção: ");
 
-            int opcao = int.Parse(Console.ReadLine());
+            int option = int.Parse(Console.ReadLine());
 
             Console.Write("Digite o primeiro número: ");
             double num1 = double.Parse(Console.ReadLine());
@@ -23,25 +23,25 @@ class Program
             Console.Write("Digite o segundo número: ");
             double num2 = double.Parse(Console.ReadLine());
 
-            double resultado = 0;
+            double result = 0;
 
-            switch (opcao)
+            switch (option)
             {
                 case 1:
-                    resultado = num1 + num2;
+                    result = num1 + num2;
                     break;
 
                 case 2:
-                    resultado = num1 - num2;
+                    result = num1 - num2;
                     break;
 
                 case 3:
-                    resultado = num1 * num2;
+                    result = num1 * num2;
                     break;
 
                 case 4:
                     if (num2 != 0)
-                        resultado = num1 / num2;
+                        result = num1 / num2;
                     else
                     {
                         Console.WriteLine("Nenhum número pode ser divido por 0.");
@@ -54,20 +54,20 @@ class Program
                     continue;
             }
 
-            resultado = Math.Round(resultado, 2);
-            Console.WriteLine("Resultado: " + resultado);
+            result = Math.Round(result, 2);
+            Console.WriteLine("Resultado: " + result);
 
             do
             {
                 Console.Write("\nDeseja fazer outra operação? (S/N): ");
-                continuar = Console.ReadLine().ToUpper();
+                continueOption = Console.ReadLine().ToUpper();
 
-                if (continuar != "S" && continuar != "N")
+                if (continueOption != "S" && continueOption != "N")
                 {
                     Console.WriteLine("Resposta inválida.");
                 }
 
-            } while (continuar != "S" && continuar != "N");
+            } while (continueOption != "S" && continueOption != "N");
 
             Console.WriteLine();
         }

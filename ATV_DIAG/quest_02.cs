@@ -5,14 +5,14 @@ class Program
     static void Main()
     {
         Console.Write("Digite o número inicial: ");
-        int num_ini = int.Parse(Console.ReadLine());
+        int start_num = int.Parse(Console.ReadLine());
 
         Console.Write("Digite o número final: ");
-        int num_limite = int.Parse(Console.ReadLine());
+        int end_num = int.Parse(Console.ReadLine());
 
-        if (num_ini < num_limite)
+        if (start_num < end_num)
         {
-            for (int i = num_ini; i <= num_limite; i++)
+            for (int i = start_num; i <= end_num; i++)
             {
                 Console.WriteLine(i);
             }
