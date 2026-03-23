@@ -40,11 +40,13 @@ class Program
                 break;
                 case 0: Console.WriteLine("Saindo..."); 
                 break;
-                default: Console.WriteLine("Opção inexistente."); 
+                default: Console.WriteLine("Opção inexistente.");
                 break;
             }
             
-            if (opcao != 0) { Console.WriteLine("\nPressione qualquer tecla para continuar..."); try { Console.ReadKey(); } catch (InvalidOperationException) { } }
+            if (opcao != 0) { Console.WriteLine("\nPressione qualquer tecla para continuar...");
+             try { Console.ReadKey(); }
+             catch (InvalidOperationException) { } }
 
         } while (opcao != 0);
     }
@@ -77,7 +79,8 @@ class Program
         do {
             Console.Write("Nome do exercício: ");
             nome = Console.ReadLine();
-        } while (string.IsNullOrWhiteSpace(nome));
+        } 
+        while (string.IsNullOrWhiteSpace(nome));
 
         Console.Write("Grupo muscular: ");
         string grupo = Console.ReadLine();
