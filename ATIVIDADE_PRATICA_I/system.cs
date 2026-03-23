@@ -24,15 +24,24 @@ class Program
 
             switch (opcao)
             {
-                case 1: AdicionarExercicio(); break;
-                case 2: ListarExercicios(); break;
-                case 3: BuscarPorNome(); break;
-                case 4: FiltrarPorGrupo(); break;
-                case 5: CalcularCargaTotal(); break;
-                case 6: ExibirMaisPesado(); break;
-                case 7: RemoverExercicio(); break;
-                case 0: Console.WriteLine("Saindo..."); break;
-                default: Console.WriteLine("Opção inexistente."); break;
+                case 1: AdicionarExercicio();
+                break;
+                case 2: ListarExercicios(); 
+                break;
+                case 3: BuscarPorNome(); 
+                break;
+                case 4: FiltrarPorGrupo(); 
+                break;
+                case 5: CalcularCargaTotal(); 
+                break;
+                case 6: ExibirMaisPesado(); 
+                break;
+                case 7: RemoverExercicio(); 
+                break;
+                case 0: Console.WriteLine("Saindo..."); 
+                break;
+                default: Console.WriteLine("Opção inexistente."); 
+                break;
             }
             
             if (opcao != 0) { Console.WriteLine("\nPressione qualquer tecla para continuar..."); try { Console.ReadKey(); } catch (InvalidOperationException) { } }
