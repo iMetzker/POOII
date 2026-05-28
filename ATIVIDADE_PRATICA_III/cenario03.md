@@ -74,8 +74,10 @@
 
 <h2>Tratamento de Exceções</h2>
 
-1. Matrícula: verificar pré-requisitos como vagas e pagamento, e lançar exceções de negócio tratadas na camada do controller.
+1. Abertura de OS: validar dados do cliente e escopo como erros tratados na camada de serviço.
 
-2. Pagamento: tratar falhas de autorização, estorno e comunicação com gateway, utilizar lógica de retry e compensação na camada de pagamento.
+2. Atribuição/Execução: conflitos de agenda, tecnico indisponível onde deve capturar e comunicar.
 
-3. Registro de progresso: validar dados como se a aula pertence ao cursoe ao  aluno matriculado, onde checa e lança erros específicos.
+3. Finalização: divergência de preço ou falha em validação do serviço onde deve lançar exceções e criar fluxo de revisão.
+
+4. Persistência e integração (notificações, cobrança): tratamento com transações e compensações.
