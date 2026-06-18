@@ -1,0 +1,15 @@
+# Artefatos de build do .NET
+bin/
+obj/
+
+# Arquivos de usuário do Visual Studio
+.vs/
+*.user
+*.suo
+
+# Banco de dados local gerado (LocalDB)
+*.mdf
+*.ldf
+
+# Configurações locais do Claude Code
+.claude/
