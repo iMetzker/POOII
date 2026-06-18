@@ -55,13 +55,13 @@ Clone o repositório do projeto.
 
 Há duas formas simples:
 
-- **Pelo Explorador de Arquivos:** abra a pasta `ATV_IV`, clique na barra de
+- **Pelo Explorador de Arquivos:** abra a pasta `ATIVIDADE_PRATICA_IV`, clique na barra de
   endereço no topo, apague o caminho, digite `powershell` e pressione **Enter**.
   Abre um terminal já na pasta certa.
 - **Ou** abra o PowerShell e navegue até a pasta com o comando `cd`
   (troque pelo caminho real onde você extraiu):
   ```powershell
-  cd C:\Users\SeuUsuario\Desktop\ATV_IV
+  cd C:\Users\SeuUsuario\Desktop\ATIVIDADE_PRATICA_IV
   ```
 
 
