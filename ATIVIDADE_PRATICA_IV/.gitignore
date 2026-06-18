@@ -1,0 +1,12 @@
+# build do .NET
+bin/
+obj/
+
+# Arquivos de usuário do Visual Studio
+.vs/
+*.user
+*.suo
+
+# DB local gerado (LocalDB)
+*.mdf
+*.ldf
